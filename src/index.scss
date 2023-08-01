@@ -1,0 +1,390 @@
+@import './SASS/reset';
+@import './SASS/variables';
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid $primary;
+  margin-bottom: 60px;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header ul li {
+  margin-left: 20px;
+}
+
+.header ul li a {
+  padding: 0 1rem;
+}
+
+.footer {
+  height: auto;
+  background-color: $primary;
+  margin-top: 5rem;
+  color: $dark;
+  font-weight: bold;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.heading p {
+  color: $primary;
+  font-size: 1rem;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+  color: $dark;
+}
+
+.boxes div {
+  padding: 30px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  color: $dark;
+}
+
+.boxes h2 {
+  margin-top: 20px;
+  color: $dark;
+}
+
+.boxes a:hover {
+  color: #777;
+}
+
+.form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+
+.form-group label {
+  text-align: left;
+  display: block;
+  margin: 0 0 5px 3px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid rgb(25, 25, 43);
+  border-radius: 5px;
+  background: $primary;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  /* appearance: button; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.btn svg {
+  margin-right: 8px;
+}
+
+.btn-reverse {
+  background: #fff;
+  color: $dark;
+}
+
+.btn-block {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn-sm {
+  padding: 5px 1rem;
+  font-size: 0.6rem;
+}
+
+.btn-danger {
+  background: $danger;
+  border: none;
+  color: white;
+}
+
+.btn-back {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+  box-shadow: $shadow;
+}
+
+.ticket-created {
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 50px;
+}
+
+.ticket-number {
+  margin-bottom: 30px;
+}
+
+.ticket-number h2 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.ticket-number p {
+  font-size: 1.3rem;
+}
+
+.ticket-info {
+  font-size: 1.3rem;
+}
+
+.container-flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ticket-headings {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  color: $dark;
+  font-size: 0.6rem;
+  font-weight: 700;
+  background-color: $primary;
+  text-transform: uppercase;
+  color: white;
+}
+
+.status-1-Acceptable {
+  background-color: $green;
+  color: #fff;
+  border-radius: 10px;
+}
+
+
+
+.collect-fail {
+  background-color: $danger;
+  color: #fff;
+  border-radius: 10px;
+}
+.role-admin {
+  background-color: $danger;
+  color: #fff;
+  border-radius: 10px;
+}
+.message-not_read {
+  background-color: $danger;
+
+  color: #fff;
+  border-radius: 10px;
+}
+.message-Archived {
+  background-color: $green;
+  color: #fff;
+  border-radius: 10px;
+}
+.role-staff {
+  background-color: $primary;
+  color: #fff;
+  border-radius: 10px;
+}
+.role-partner {
+  background-color: $green;
+  color: #fff;
+  border-radius: 10px;
+}
+.ticket-page {
+  position: relative;
+  text-align: left;
+}
+
+.ticket-page h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  span {
+    color: $primary;
+  }
+}
+
+.ticket-page .btn {
+  margin-bottom: 30px;
+}
+
+.ticket-page .btn-block {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.ticket-desc {
+  margin: 20px 0;
+  font-size: 17px;
+  background-color: #f4f4f4;
+  border: 1px $primary solid;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: $dark;
+}
+
+.note {
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  text-align: left;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.note-head {
+  background: #f4f4f4;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.note-date {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-size: 14px;
+}
+
+.delete-note {
+  color: $danger;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.btn-close:hover {
+  color: $danger;
+  transform: scale(0.98);
+}
+
+p.status-in-progress {
+  color: $warning;
+}
+
+p.status-waiting {
+  color: $danger;
+}
+
+p.status-ready {
+  color: $primary;
+}
+
+p.status-complete {
+  color: $green;
+}
+
+footer {
+
+  top: 95vh;
+  text-align: center;
+}
+
+.modal-title {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.leaflet-container {
+  height: 20rem;
+  background-color: #fff;
+}
+
+@media (max-width: 600px) {
+  .boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .ticket-created h2,
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading p {
+    font-size: 1.5rem;
+  }
+}
+
+.table-container {
+  width: 100%;
+}
+
+
+.code{
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  color: white!important;
+  letter-spacing: 1px;
+}

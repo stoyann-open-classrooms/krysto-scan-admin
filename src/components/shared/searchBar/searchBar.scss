@@ -1,0 +1,35 @@
+@import "../../../SASS/reset";
+@import "../../../SASS/variables";
+
+
+.searchBar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .searchBar-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .searchBar-container button {
+    background-color: $primary;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .searchBar-container button:hover {
+    background-color: $secondary;
+    color: $dark;
+    box-shadow: $shadow;
+  }

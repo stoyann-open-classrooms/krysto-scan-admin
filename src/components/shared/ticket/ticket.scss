@@ -1,0 +1,26 @@
+@import "../../../SASS/reset";
+@import "../../../SASS/variables";
+
+
+.ticket {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #f4f4f4;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  color: $dark;
+  font-size: 0.6rem;
+  font-weight: bolder;
+ 
+}
+
+
+.ticket.empty-city {
+  background-color: rgb(181, 96, 96);
+  color: white;
+}

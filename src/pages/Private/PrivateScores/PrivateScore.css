@@ -1,0 +1,9 @@
+.ticket-img-container {
+  height: 100%;
+}
+.ticket-img-container img {
+  height: 80px;
+  width: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=PrivateScore.css.map */

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #333;
+  color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(21, 37, 37, 0.681);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #9097e1;
+  padding: 1.4rem 2.8rem;
+  border-radius: 5px;
+  height: auto;
+  width: 40rem;
+  overflow-y: auto;
+}
+
+.btn-close {
+  background-color: transparent;
+  background: none;
+  border: none;
+  color: #d54848;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.btn-close:hover {
+  font-weight: bolder;
+}
+
+.modal-content {
+  padding: 1rem;
+  max-height: 80vh;
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #9097e1;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background-color: #62ebca;
+}
+
+.modal-open {
+  overflow: hidden;
+}/*# sourceMappingURL=Modal.css.map */

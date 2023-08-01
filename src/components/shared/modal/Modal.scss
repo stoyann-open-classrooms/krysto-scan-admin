@@ -1,0 +1,62 @@
+@import "../../../SASS/reset";
+@import "../../../SASS/variables";
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(21, 37, 37, 0.681);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $primary;
+  padding: 1.4rem 2.8rem;
+  border-radius: $radius;
+  height: auto;
+  width: 40rem;
+  overflow-y: auto;
+}
+
+
+.btn-close {
+  background-color: transparent;
+  background: none;
+  border: none;
+  color: $danger;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+
+  &:hover {
+    font-weight: bolder;
+  }
+}
+
+.modal-content {
+  padding: 1rem;
+  max-height: 80vh;
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: $primary;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background-color: $secondary;
+}
+
+.modal-open {
+  overflow: hidden;
+}
